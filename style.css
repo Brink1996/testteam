@@ -1,0 +1,113 @@
+/*CSS document*/
+
+/*Insert global rules here - rules that apply for all pages on your site and all device sizes. This could be text color, font type, font-sizes, margin on elements */
+
+/*COMMENTS WITH CAPITAL LETTERS ARE EASY TO SPOT, SO USE THEM FOR HEADINGS FOR OVERVIEW. IT IS A GOOD IDEA TO HAVE A HEADING FOR YOUR HEADER, NAVIGATION, MAIN AND FOOTER. SEE EXAMPLE BELOW*/
+
+
+/*HEADER*/
+
+/* example where you target the h1 inside the header tag and give it a color and a size */
+
+
+
+/*Main*/
+
+/* example to be deleted*/
+
+
+/*when you develop mobile first responsive pages, you add rules for different device sizes after all the global rules, starting with the smallest screen size*/
+
+
+.navbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    background-color: black;
+    border: 1px solid grey;
+    padding-bottom: 12px;
+
+}
+
+.main-nav {
+    list-style-type: none;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: white;
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    margin-left: 2%;
+    top: 7px;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 7px;
+    right: 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+/* ACTIVE TIL JS DELEN*/
+.active {
+    display: block;
+}
+
+@media screen and (min-width: 1080px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+        color: lightgray;
+    }
+
+    #home {
+        display: none;
+    }
